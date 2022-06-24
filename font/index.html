@@ -1,0 +1,946 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Moe Moe Moe Moe Moe Moe Moe">
+      
+      
+      
+        <meta name="author" content="shoui">
+      
+      
+        <link rel="canonical" href="https://learnjapanese.moe/font/">
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Fixing your font - TheMoeWay</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../javascripts/extra.js">
+    
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6M8XGSMGX2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6M8XGSMGX2');
+</script>
+
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#are-you-using-the-right-font" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    
+    <!-- Link to home -->
+    <a href=".." title="TheMoeWay"
+      class="md-header__button md-logo" aria-label="TheMoeWay" data-md-component="logo">
+      
+  <img src="../img/moe.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheMoeWay
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+            Fixing your font
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discord icon that links to discord-->
+    <label class="md-header__button md-icon">
+      <a href="/join">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22 24-5.25-5 .63 2H4.5A2.5 2.5 0 0 1 2 18.5v-15A2.5 2.5 0 0 1 4.5 1h15A2.5 2.5 0 0 1 22 3.5V24M12 6.8c-2.68 0-4.56 1.15-4.56 1.15 1.03-.92 2.83-1.45 2.83-1.45l-.17-.17c-1.69.03-3.22 1.2-3.22 1.2-1.72 3.59-1.61 6.69-1.61 6.69 1.4 1.81 3.48 1.68 3.48 1.68l.71-.9c-1.25-.27-2.04-1.38-2.04-1.38S9.3 14.9 12 14.9s4.58-1.28 4.58-1.28-.79 1.11-2.04 1.38l.71.9s2.08.13 3.48-1.68c0 0 .11-3.1-1.61-6.69 0 0-1.53-1.17-3.22-1.2l-.17.17s1.8.53 2.83 1.45c0 0-1.88-1.15-4.56-1.15m-2.07 3.79c.65 0 1.18.57 1.17 1.27 0 .69-.52 1.27-1.17 1.27-.64 0-1.16-.58-1.16-1.27 0-.7.51-1.27 1.16-1.27m4.17 0c.65 0 1.17.57 1.17 1.27 0 .69-.52 1.27-1.17 1.27-.64 0-1.16-.58-1.16-1.27 0-.7.51-1.27 1.16-1.27z"/></svg>
+      </a>
+    </label>
+
+    <!-- Heart emoji that links to patreon -->
+    <label class="md-header__button md-icon">
+      <a href="/donate">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z"/></svg>
+      </a>
+    </label>
+
+
+
+    <!-- Color palette -->
+    
+    <form class="md-header__option" data-md-component="palette">
+      
+      
+      
+      <input class="md-option" data-md-color-media="" data-md-color-scheme="default"
+        data-md-color-primary="blue" data-md-color-accent="cyan" type="radio" name="__palette"
+        id="__palette_1" />
+      
+      
+    </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+    <label class="md-header__button md-icon" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    </label>
+
+    <!-- Search interface -->
+    
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+  </nav>
+
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+
+
+
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TheMoeWay" class="md-nav__button md-logo" aria-label="TheMoeWay" data-md-component="logo">
+      
+  <img src="../img/moe.svg" alt="logo">
+
+    </a>
+    TheMoeWay
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/" class="md-nav__link">
+        Japanese Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speaking/" class="md-nav__link">
+        Speaking Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animejp/" class="md-nav__link">
+        Anime Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kanji/" class="md-nav__link">
+        Learning Kanji
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reading/" class="md-nav__link">
+        Getting into Reading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monolingual/" class="md-nav__link">
+        Monolingual Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        Japanese FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fixing your font
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Fixing your font
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-10" class="md-nav__link">
+    Windows 10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    iOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anki" class="md-nav__link">
+    Anki
+  </a>
+  
+    <nav class="md-nav" aria-label="Anki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forcing-japanese-font-in-anki" class="md-nav__link">
+    Forcing Japanese font in Anki
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yomichan" class="md-nav__link">
+    Yomichan
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Visual Novels
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Visual Novels" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Visual Novels
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vn/" class="md-nav__link">
+        Learning Japanese with VNs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vn-setup/" class="md-nav__link">
+        Visual Novel Setup
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Yomichan
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Yomichan" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Yomichan
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yomichan/" class="md-nav__link">
+        Yomichan Setup Tutorial
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Other
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Other" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Other
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donate/" class="md-nav__link">
+        Donate
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" >
+    <div class="md-sidebar__scrollwrap">
+        <a href="/join"><img width="100%" src="/img/discord.png"></a>
+       <!-- <a href="/donate"><img width="100%" src="/img/donate.png"></a> -->
+        <div class="md-sidebar__inner">
+            <br>
+            
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-10" class="md-nav__link">
+    Windows 10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    iOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anki" class="md-nav__link">
+    Anki
+  </a>
+  
+    <nav class="md-nav" aria-label="Anki">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forcing-japanese-font-in-anki" class="md-nav__link">
+    Forcing Japanese font in Anki
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yomichan" class="md-nav__link">
+    Yomichan
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+        </div>
+    </div>
+</div>
+
+
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="are-you-using-the-right-font">Are you using the right font?<a class="headerlink" href="#are-you-using-the-right-font" title="Permanent link">&para;</a></h1>
+<p><img alt="Chinese vs Japanese font" src="../img/font1.png" /></p>
+<p>By default, your computer / phone will display kanji in a Chinese font. Japanese kanji look slightly different, and it can be damaging if you learn the Chinese appearance of kanji rather than the Japanese ones.  </p>
+<p><strong>Verifying if your browser is currently using a Japanese font</strong></p>
+<p>The one character that looks strikingly different between Japanese and Chinese fonts is <a href="https://jisho.org/search/%E7%9B%B4%20%23kanji">直</a> which is used in the word <a href="https://jpdb.io/search?q=%E7%9B%B4%E3%81%99">直す</a> (<em>naosu</em>) which means <em>cure, heal, fix</em>.  </p>
+<figure>
+  <img src="/img/font2.png" width="300" />
+  <figcaption>Naosu in a Chinese font (DengXian)</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/font3.png" width="300" />
+  <figcaption>Naosu in a Japanese font (IPAex Gothic)</figcaption>
+</figure>
+
+<p>If your 直 looks like the second image, congrats! You are using a Japanese font, if not, change your font.  </p>
+<h2 id="windows-10">Windows 10<a class="headerlink" href="#windows-10" title="Permanent link">&para;</a></h2>
+<p><span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-i">I</kbd></span> to open <strong>Settings</strong> &gt; <strong>Apps</strong> &gt; <strong>Optional features</strong> &gt; <strong>Add a feature</strong> &gt; Search <strong>"Japanese supplemental fonts"</strong> and <strong>Install</strong>  </p>
+<details class="tip">
+<summary>Advanced Users: Powershell</summary>
+<p>Japanese fonts can also be installed using <strong>Windows Powershell (Administrator)</strong>:
+<div class="highlight"><pre><span></span><code><span class="nb">Get-WindowsCapability</span> <span class="n">-Online</span> <span class="n">-Name</span> <span class="n">Language</span><span class="p">.</span><span class="n">Fonts</span><span class="p">.</span><span class="n">Jpan</span><span class="p">~~~</span><span class="n">und-JPAN</span><span class="p">*</span> <span class="p">|</span> <span class="nb">Add-WindowsCapability</span> <span class="n">-Online</span>
+</code></pre></div>
+This does not require a restart.</p>
+</details>
+<details class="question">
+<summary>Also have Chinese supplemental fonts already installed?</summary>
+<p>You will need to set your locale to Japanese (Japan).</p>
+<div class="admonition abstract">
+<p class="admonition-title">Setting Japanese locale</p>
+<ol>
+<li>Open the Run dialog box by pressing <span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-r">R</kbd></span></li>
+<li>Type <code>intl.cpl</code> and press <span class="keys"><kbd class="key-enter">Enter</kbd></span></li>
+<li>Click on the <em>Administrative</em> tab, go to <em>Change system locale...</em> and select <strong>Japanese (Japan)</strong> and click OK.</li>
+</ol>
+</div>
+</details>
+<p>Now if you're using a Chromium based browser (e.g. Google Chrome, Brave), click the Menu <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></svg></span> &gt; <strong>Settings</strong> &gt; click on <strong>Appearance</strong> on the left &gt; <strong>Customize fonts</strong>. Here's where you'll need to set your fonts.  </p>
+<p>Standard font: Meiryo UI<br />
+Serif font: Yu Mincho<br />
+Sans-serif font: Meiryo <br />
+Monospace: MS Gothic   </p>
+<p>If you're using Firefox it is already pre-configured. </p>
+<h2 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h2>
+<p>You just need to add Japanese as a preferred language in System Preferences.<br />
+ &gt; System Preferences, then click Language &amp; Region. Click General, then Add a language and choose Japanese 日本語  </p>
+<h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<p>You should have <code>ja_JP.UTF-8</code> as one of your locales. If not, uncomment the line <code>#ja_JP.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code> and run:</p>
+<div class="highlight"><pre><span></span><code>sudo locale-gen
+</code></pre></div>
+<p>Now install the package <a href="https://archlinux.org/packages/extra/any/noto-fonts-cjk/">noto-fonts-cjk</a>. It is available on the official Arch repositories.  </p>
+<p>Now create a fontconfig in <code>~/.config/fontconfig/conf.d</code> for Japanese text. You can find an excellent example config file by tatsumoto-ren <a href="https://github.com/tatsumoto-ren/dotfiles/blob/main/.config/fontconfig/conf.d/99-japanese-fonts.conf">here</a>. </p>
+<p>If Chinese fonts persist in the browser you can force it. In any Chromium-based browser you can do that by doing:  </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z"/></svg></span> &gt; <strong>Settings</strong> &gt; click on <strong>Appearance</strong> on the left &gt; <strong>Customize fonts</strong></p>
+<p>Standard font: Noto Sans CJK JP Regular<br />
+Serif font: Noto Serif CJK JP Regular<br />
+Sans-serif font: Noto Sans CJK JP Regular  </p>
+<h2 id="android">Android<a class="headerlink" href="#android" title="Permanent link">&para;</a></h2>
+<p>Just add Japanese (it looks like this: 日本語) as a secondary language, it won't change your display language unless you move it to the top.  </p>
+<p><img alt="Android settings" src="../img/font9.jpg" /></p>
+<h2 id="ios">iOS<a class="headerlink" href="#ios" title="Permanent link">&para;</a></h2>
+<p>Adding the Japanese keyboard (kana or romaji whatever works) should do the trick.  </p>
+<h2 id="anki">Anki<a class="headerlink" href="#anki" title="Permanent link">&para;</a></h2>
+<p>I think Chinese font in Anki cards looks the worst as kana will be sans-serif and kanji will be serif AND out of proportion AND Chinese so it looks all out of place.</p>
+<figure>
+  <img src="/img/font4.png" width="900" />
+  <figcaption>Oh god. Unironically a lot of people's cards look like this.</figcaption>
+</figure>
+
+<p>After you have installed Japanese fonts on your system it <em>should</em> automatically use Japanese fonts. If not, you will need to force it.  </p>
+<h3 id="forcing-japanese-font-in-anki">Forcing Japanese font in Anki<a class="headerlink" href="#forcing-japanese-font-in-anki" title="Permanent link">&para;</a></h3>
+<p>IPAex Gothic is a good sans-serif Japanese font I recommend for Anki. You can download it <a href="https://moji.or.jp/wp-content/ipafont/IPAexfont/ipaexg00401.zip">here</a>  </p>
+<p>Install the font onto your system and reboot.  </p>
+<p>Windows: Double click and click Install<br />
+macOS: Drag the font into the Font Book<br />
+Linux: Move the file to <code>~/.local/share/fonts/</code> and then run <code>fc-cache -f -v</code>  </p>
+<p>Now in Anki click "Add" then click on "Cards" and then "Styling" and modify your font family accordingly.  </p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">IPAexGothic</span><span class="p">;</span><span class="w"> </span><span class="c">/* here is where you set font */</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>You can also change the font by putting the font into the Anki collection.media directory.  </p>
+<p>Windows: <code>C:\Users\&lt;user&gt;\AppData\Roaming\Anki2\(profile)\collection.media</code><br />
+macOS: <code>~/Library/Application Support/Anki2/(profile)/collection.media</code><br />
+Linux: <code>~/.local/share/Anki2/(profile)/collection.media</code><br />
+Android: <code>/storage/emulated/0/AnkiDroid/collection.media</code>  </p>
+<p>Now in Anki click "Add" then click on "Cards" and then "Styling" and modify your font family accordingly.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Don't copy exactly!</p>
+<p>Just add what you don't already have. </p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">CustomFont</span><span class="p">;</span><span class="w"> </span><span class="c">/* here is where you set font */</span><span class="w"></span>
+
+<span class="w"> </span><span class="err">@font-face</span><span class="w"> </span><span class="err">{</span><span class="w"> </span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">CustomFont</span><span class="p">;</span><span class="w"> </span><span class="n">src</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s1">&#39;ipaexg.ttf&#39;</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c">/* here is where you define the font */</span><span class="w"></span>
+
+<span class="err">}</span><span class="w">  </span>
+</code></pre></div>
+<p>Preview:</p>
+<figure>
+  <img src="/img/font5.png" width="900" />
+  <figcaption>With a full Japanese definition.</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/font6.png" width="900" />
+  <figcaption>With a bilingual definition.</figcaption>
+</figure>
+
+<p>Now also change your font for the Anki <em>editor</em>. Click on "Add" then "Fields" and change the Editing font of each field to any one of these (or any other font you know is a Japanese font)</p>
+<p>IPAexGothic<br />
+Meiryo<br />
+MS Gothic<br />
+Yu Gothic<br />
+Hiragino Kaku Gothic Pro<br />
+Noto Sans CJK JP Regular  </p>
+<h2 id="yomichan">Yomichan<a class="headerlink" href="#yomichan" title="Permanent link">&para;</a></h2>
+<p>Yomichan's font should change according to your browser's font, but you can force Japanese font if not.   </p>
+<p>Using Popup CSS...</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">kanji-link</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">IPAexGothic</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">.</span><span class="nc">source-text</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">IPAexGothic</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">.</span><span class="nc">gloss-content</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">IPAexGothic</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="p">.</span><span class="nc">tag-label-content</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">IPAexGothic</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<figure>
+  <img src="/img/font7.png" width="900" />
+  <figcaption>Japanese to Japanese defintion with IPAexゴシック font.</figcaption>
+</figure>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "search.suggest", "search.highlighting", "search.share"], "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>

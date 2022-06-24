@@ -1,0 +1,1159 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Moe Moe Moe Moe Moe Moe Moe">
+      
+      
+      
+        <meta name="author" content="shoui">
+      
+      
+        <link rel="canonical" href="https://learnjapanese.moe/vn-linux/">
+      
+      <link rel="icon" href="../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Visual novels on Linux - TheMoeWay</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../javascripts/extra.js">
+    
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6M8XGSMGX2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6M8XGSMGX2');
+</script>
+
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visual-novels-on-linux" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <!--
+  Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    
+    <!-- Link to home -->
+    <a href=".." title="TheMoeWay"
+      class="md-header__button md-logo" aria-label="TheMoeWay" data-md-component="logo">
+      
+  <img src="../img/moe.svg" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheMoeWay
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+            Visual novels on Linux
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discord icon that links to discord-->
+    <label class="md-header__button md-icon">
+      <a href="/join">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22 24-5.25-5 .63 2H4.5A2.5 2.5 0 0 1 2 18.5v-15A2.5 2.5 0 0 1 4.5 1h15A2.5 2.5 0 0 1 22 3.5V24M12 6.8c-2.68 0-4.56 1.15-4.56 1.15 1.03-.92 2.83-1.45 2.83-1.45l-.17-.17c-1.69.03-3.22 1.2-3.22 1.2-1.72 3.59-1.61 6.69-1.61 6.69 1.4 1.81 3.48 1.68 3.48 1.68l.71-.9c-1.25-.27-2.04-1.38-2.04-1.38S9.3 14.9 12 14.9s4.58-1.28 4.58-1.28-.79 1.11-2.04 1.38l.71.9s2.08.13 3.48-1.68c0 0 .11-3.1-1.61-6.69 0 0-1.53-1.17-3.22-1.2l-.17.17s1.8.53 2.83 1.45c0 0-1.88-1.15-4.56-1.15m-2.07 3.79c.65 0 1.18.57 1.17 1.27 0 .69-.52 1.27-1.17 1.27-.64 0-1.16-.58-1.16-1.27 0-.7.51-1.27 1.16-1.27m4.17 0c.65 0 1.17.57 1.17 1.27 0 .69-.52 1.27-1.17 1.27-.64 0-1.16-.58-1.16-1.27 0-.7.51-1.27 1.16-1.27z"/></svg>
+      </a>
+    </label>
+
+    <!-- Heart emoji that links to patreon -->
+    <label class="md-header__button md-icon">
+      <a href="/donate">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z"/></svg>
+      </a>
+    </label>
+
+
+
+    <!-- Color palette -->
+    
+    <form class="md-header__option" data-md-component="palette">
+      
+      
+      
+      <input class="md-option" data-md-color-media="" data-md-color-scheme="default"
+        data-md-color-primary="blue" data-md-color-accent="cyan" type="radio" name="__palette"
+        id="__palette_1" />
+      
+      
+    </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+    <label class="md-header__button md-icon" for="__search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    </label>
+
+    <!-- Search interface -->
+    
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+  </nav>
+
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+
+
+
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TheMoeWay" class="md-nav__button md-logo" aria-label="TheMoeWay" data-md-component="logo">
+      
+  <img src="../img/moe.svg" alt="logo">
+
+    </a>
+    TheMoeWay
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/" class="md-nav__link">
+        Japanese Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speaking/" class="md-nav__link">
+        Speaking Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animejp/" class="md-nav__link">
+        Anime Japanese
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kanji/" class="md-nav__link">
+        Learning Kanji
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reading/" class="md-nav__link">
+        Getting into Reading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monolingual/" class="md-nav__link">
+        Monolingual Guide
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        Japanese FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../font/" class="md-nav__link">
+        Fixing your font
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Visual Novels
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Visual Novels" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Visual Novels
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vn/" class="md-nav__link">
+        Learning Japanese with VNs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vn-setup/" class="md-nav__link">
+        Visual Novel Setup
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Yomichan
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Yomichan" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Yomichan
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yomichan/" class="md-nav__link">
+        Yomichan Setup Tutorial
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Resources
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Resources" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Resources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        Resources
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Other
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Other" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Other
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donate/" class="md-nav__link">
+        Donate
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" >
+    <div class="md-sidebar__scrollwrap">
+        <a href="/join"><img width="100%" src="/img/discord.png"></a>
+       <!-- <a href="/donate"><img width="100%" src="/img/donate.png"></a> -->
+        <div class="md-sidebar__inner">
+            <br>
+            
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-wine-dependencies" class="md-nav__link">
+    Install Wine &amp; Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-wine-and-install-runtimes" class="md-nav__link">
+    Configure Wine and install runtimes
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Wine and install runtimes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-wineprefix" class="md-nav__link">
+    Creating the Wineprefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-winetricks" class="md-nav__link">
+    Using winetricks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#japanese-fonts-in-wine" class="md-nav__link">
+    Japanese fonts in Wine
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lutris-initial-setup" class="md-nav__link">
+    Lutris initial setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Lutris initial setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment Variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-visual-novel" class="md-nav__link">
+    Installing the visual novel
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing the visual novel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mounting-disc-images" class="md-nav__link">
+    Mounting disc images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-installer" class="md-nav__link">
+    Running the installer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-to-lutris" class="md-nav__link">
+    Adding to Lutris
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-troubleshooting" class="md-nav__link">
+    Linux: Troubleshooting
+  </a>
+  
+    <nav class="md-nav" aria-label="Linux: Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shift-jis" class="md-nav__link">
+    Shift-JIS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mpeg-1-movie-does-not-play" class="md-nav__link">
+    MPEG-1 movie does not play
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuguriya-vns" class="md-nav__link">
+    Fuguriya VNs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+        </div>
+    </div>
+</div>
+
+
+
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="visual-novels-on-linux">Visual novels on Linux<a class="headerlink" href="#visual-novels-on-linux" title="Permanent link">&para;</a></h1>
+<p>Visual novels are only Microsoft Windows programs, therefore you must use Wine in order to run them. This works exceptionally well on Linux.  </p>
+<p>Follow the steps below to run VNs on Linux. </p>
+<h2 id="install-wine-dependencies">Install Wine &amp; Dependencies<a class="headerlink" href="#install-wine-dependencies" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Arch</label><div class="tabbed-content">
+<p>You will need to enable [multilib] and [community] before running this command. To do this, uncomment the <code>[multilib]</code> and <code>[community]</code> section in <code>/etc/pacman.conf</code>.</p>
+<div class="highlight"><pre><span></span><code>sudo pacman -S wine-staging winetricks lutris giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs gst-plugins-good lib32-gst-plugins-good gst-plugins-bad gst-plugins-bad-libs gst-plugins-ugly libgudev vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+</code></pre></div>
+<p><em>This may look like a lot of "bloat" but for older games especially, you will need all of these.</em>  </p>
+<p>Now we might want something called <em>CDemu</em>, this is to trick some VNs into thinking that the original disc for the VN is inserted, so it'll let you play the game.<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S cdemu-client cdemu-daemon
+</code></pre></div></p>
+<p>In order to use CDemu, you need to install the VHBA module.<br />
+<div class="highlight"><pre><span></span><code>sudo pacman -S vhba-module
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Custom and LTS Kernels</p>
+<p>If you are using a custom or LTS kernel, install <code>vhba-module-dkms</code>. Otherwise, install <code>vhba-module</code>.  </p>
+</div>
+<p>The CDemu service is loaded with the kernel module.  </p>
+<p>If drivers for CD/DVD drives are not automatically loaded, you can load it manually.<br />
+<div class="highlight"><pre><span></span><code>sudo modprobe -a sg sr_mod vhba
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Ubuntu</label><div class="tabbed-content">
+<p>First you will need to enable 32-bit architecture.<br />
+<div class="highlight"><pre><span></span><code>sudo dpkg --add-architecture i386
+</code></pre></div>
+Download the WineHQ repository key:<br />
+<div class="highlight"><pre><span></span><code>wget -nc https://dl.winehq.org/wine-builds/winehq.key
+</code></pre></div>
+Now add the WineHQ repository key:<br />
+<div class="highlight"><pre><span></span><code>sudo apt-key add winehq.key
+</code></pre></div>
+Add the repository:  </p>
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository <span class="s1">&#39;deb https://dl.winehq.org/wine-builds/ubuntu/ focal main&#39;</span> -y
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Other Ubuntu Versions</p>
+<p>If you use a different version of Ubuntu you must do this instead. Replace <code>groovy</code> with the codename of the Ubuntu version you use. This one is for 20.10:
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository <span class="s1">&#39;deb https://dl.winehq.org/wine-builds/ubuntu/ groovy main&#39;</span> -y
+</code></pre></div></p>
+</div>
+<p>Add PPA's for Lutris:<br />
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:lutris-team/lutris -y
+</code></pre></div></p>
+<p>Update packages:<br />
+<div class="highlight"><pre><span></span><code>sudo apt update
+</code></pre></div>
+Now install the stable version of Wine:<br />
+<div class="highlight"><pre><span></span><code>sudo apt-get install --install-recommends winehq-stable -y
+</code></pre></div>
+Now install Lutris, CDEmu and some needed libraries:<br />
+<div class="highlight"><pre><span></span><code>sudo apt-get install lutris libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386 libgstreamer-plugins-base1.0-0:i386 libgstreamer-plugins-good1.0-0:i386 libgstreamer-plugins-bad1.0-0:i386 libgudev-1.0-0:i386 ocl-icd-dev:i386 -y
+</code></pre></div>
+Now we need to install <code>winetricks</code> manually because the one on the repository already is outdated and causes errors.<br />
+First, wget the binary:<br />
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+</code></pre></div>
+Use <code>chmod</code> to make it into an executable:<br />
+<div class="highlight"><pre><span></span><code>chmod +x winetricks
+</code></pre></div>
+Now copy it to your <code>/usr/bin</code> so it can be used in a command line.<br />
+<div class="highlight"><pre><span></span><code>sudo cp winetricks /usr/bin
+</code></pre></div></p>
+<p>Optionally, for some VNs, you might want <em>CDemu</em> which tricks VNs into thinking that the original disc is inserted so it'll let you play the game.  </p>
+<p>Add PPA's for CDEmu:<br />
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:cdemu/ppa -y
+</code></pre></div>
+Update package repositories:<br />
+<div class="highlight"><pre><span></span><code>sudo apt update
+</code></pre></div>
+Now we need to install the VHBA module if you don't already have it.<br />
+<div class="highlight"><pre><span></span><code>sudo apt-get install vhba-dkms -y
+</code></pre></div>
+The CDemu service is loaded with the kernel module.  </p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Debian</label><div class="tabbed-content">
+<p>✅ Tested on Debian 11 Bullseye</p>
+<p>First you will need to enable 32-bit architecture.<br />
+<div class="highlight"><pre><span></span><code>sudo dpkg --add-architecture i386
+</code></pre></div>
+Download the WineHQ repository key:<br />
+<div class="highlight"><pre><span></span><code>wget -nc https://dl.winehq.org/wine-builds/winehq.key
+</code></pre></div>
+Now add the WineHQ repository key:<br />
+<div class="highlight"><pre><span></span><code>sudo apt-key add winehq.key
+</code></pre></div>
+Add the WineHQ repository to your <code>/etc/apt/sources.list</code>:  </p>
+<p><code>deb https://dl.winehq.org/wine-builds/debian/ bullseye main</code>  </p>
+<p>You will need the <strong>Deb Multimedia</strong> repository for CDEmu, this is used to trick VNs that the disc is inserted if no crack is available.
+Using <code>wget</code>, get its GPG keyring:
+<div class="highlight"><pre><span></span><code>wget https://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
+</code></pre></div>
+Install the deb file as usual:
+<div class="highlight"><pre><span></span><code>sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
+</code></pre></div>
+Now add the repository to your <code>/etc/apt/sources.list</code>  </p>
+<p><code>deb http://www.deb-multimedia.org bullseye main</code>  </p>
+<p>You also need to append <code>contrib</code> and <code>non-free</code> to your main repository line in <code>/etc/apt/sources.list</code> if you haven't done so already.  <br />
+Example:<br />
+<code>deb http://deb.debian.org/debian bullseye main contrib non-free</code>  </p>
+<p>Now finally update package repositories:
+<div class="highlight"><pre><span></span><code>sudo apt update
+</code></pre></div></p>
+<p>Now install all the needed packages, including Wine, Lutris, CDEmu and other Wine dependencies.
+<div class="highlight"><pre><span></span><code>sudo apt install --install-recommends winehq-stable lutris dbus-x11 libmirage-plugins gcdemu cdemu-client cdemu-daemon libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386 libgstreamer-plugins-base1.0-0:i386 gstreamer1.0-plugins-good:i386 libgstreamer-plugins-bad1.0-0:i386 libgudev-1.0-0:i386 ocl-icd-dev:i386 -y
+</code></pre></div></p>
+<p>Now we need to install <code>winetricks</code> manually because the one on the repository already is outdated and causes errors.<br />
+First, wget the binary:<br />
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+</code></pre></div>
+Use <code>chmod</code> to make it into an executable:<br />
+<div class="highlight"><pre><span></span><code>chmod +x winetricks
+</code></pre></div>
+Now copy it to your <code>/usr/bin</code> so it can be used in a command line.<br />
+<div class="highlight"><pre><span></span><code>sudo cp winetricks /usr/bin
+</code></pre></div>
+In case you do not have the VHBA kernel module, get it now.<br />
+<div class="highlight"><pre><span></span><code>sudo apt install vhba-dkms
+</code></pre></div>
+The Cdemu service should be loaded with the kernel module.  </p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">Fedora</label><div class="tabbed-content">
+<p>First add the Wine repository.  </p>
+<p>Fedora 33:<br />
+<div class="highlight"><pre><span></span><code>sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/33/winehq.repo
+</code></pre></div>
+Fedora 32:
+<div class="highlight"><pre><span></span><code>sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/32/winehq.repo
+</code></pre></div></p>
+<p>Now lets install ALL the build dependencies.  </p>
+<div class="highlight"><pre><span></span><code>sudo dnf install alsa-plugins-pulseaudio.i686 glibc-devel.i686 glibc-devel libgcc.i686 libX11-devel.i686 freetype-devel.i686 libXcursor-devel.i686 libXi-devel.i686 libXext-devel.i686 libXxf86vm-devel.i686 libXrandr-devel.i686 libXinerama-devel.i686 mesa-libGLU-devel.i686 mesa-libOSMesa-devel.i686 libXrender-devel.i686 libpcap-devel.i686 ncurses-devel.i686 libzip-devel.i686 lcms2-devel.i686 zlib-devel.i686 libv4l-devel.i686 libgphoto2-devel.i686 cups-devel.i686 libxml2-devel.i686 openldap-devel.i686 libxslt-devel.i686 gnutls-devel.i686 libpng-devel.i686 flac-libs.i686 json-c.i686 libICE.i686 libSM.i686 libXtst.i686 libasyncns.i686 liberation-narrow-fonts.noarch libieee1284.i686 libogg.i686 libsndfile.i686 libuuid.i686 libva.i686 libvorbis.i686 libwayland-client.i686 libwayland-server.i686 llvm-libs.i686 mesa-dri-drivers.i686 mesa-filesystem.i686 mesa-libEGL.i686 mesa-libgbm.i686 nss-mdns.i686 ocl-icd.i686 pulseaudio-libs.i686 sane-backends-libs.i686 tcp_wrappers-libs.i686 unixODBC.i686 samba-common-tools.x86_64 samba-libs.x86_64 samba-winbind.x86_64 samba-winbind-clients.x86_64 samba-winbind-modules.x86_64 mesa-libGL-devel.i686 fontconfig-devel.i686 libXcomposite-devel.i686 libtiff-devel.i686 openal-soft-devel.i686 mesa-libOpenCL-devel.i686 opencl-utils-devel.i686 alsa-lib-devel.i686 gsm-devel.i686 libjpeg-turbo-devel.i686 pulseaudio-libs-devel.i686 pulseaudio-libs-devel gtk3-devel.i686 libattr-devel.i686 libva-devel.i686 libexif-devel.i686 libexif.i686 glib2-devel.i686 mpg123-devel.i686 mpg123-devel.x86_64 libcom_err-devel.i686 libcom_err-devel.x86_64 libFAudio-devel.i686 libFAudio-devel.x86_64
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code>sudo dnf groupinstall <span class="s2">&quot;C Development Tools and Libraries&quot;</span>
+sudo dnf groupinstall <span class="s2">&quot;Development Tools&quot;</span>
+</code></pre></div>
+You also need some packages from <a href="https://rpmfusion.org">rpmfusion</a>  </p>
+<div class="highlight"><pre><span></span><code>sudo dnf install gstreamer-plugins-base-devel gstreamer-devel.i686 gstreamer.i686 gstreamer-plugins-base.i686 gstreamer-devel gstreamer1.i686 gstreamer1-devel gstreamer1-plugins-base-devel.i686 gstreamer-plugins-base.x86_64 gstreamer.x86_64 gstreamer1-devel.i686 gstreamer1-plugins-base-devel gstreamer-plugins-base-devel.i686 gstreamer-ffmpeg.i686 gstreamer1-plugins-bad-free-devel.i686 gstreamer1-plugins-bad-free-extras.i686 gstreamer1-plugins-good-extras.i686 gstreamer1-libav.i686 gstreamer1-plugins-bad-freeworld.i686
+</code></pre></div>
+<p>Now install Wine:  </p>
+<div class="highlight"><pre><span></span><code>sudo dnf install wine
+</code></pre></div>
+<p>And then Winetricks:  </p>
+<p>First, wget the binary:<br />
+<div class="highlight"><pre><span></span><code>wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+</code></pre></div>
+Use <code>chmod</code> to make it into an executable:<br />
+<div class="highlight"><pre><span></span><code>chmod +x winetricks
+</code></pre></div>
+Now copy it to your <code>/usr/bin</code> so it can be used in a command line.<br />
+<div class="highlight"><pre><span></span><code>sudo cp winetricks /usr/bin
+</code></pre></div></p>
+<p>And now CDEmu, first enable the rok/cdemu COPR repository:  </p>
+<p><div class="highlight"><pre><span></span><code>sudo dnf copr <span class="nb">enable</span> rok/cdemu
+</code></pre></div>
+Now install CDEmu daemon and clients:  </p>
+<div class="highlight"><pre><span></span><code>sudo dnf install cdemu-daemon cdemu-client gcdemu
+</code></pre></div>
+<p>Now load the VHBA kernel module:<br />
+<div class="highlight"><pre><span></span><code>sudo akmods
+sudo systemctl restart systemd-modules-load.service
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">openSUSE</label><div class="tabbed-content">
+<p>✅ Tested on openSUSE Tumbleweed 20210408 </p>
+<p><div class="highlight"><pre><span></span><code>sudo zypper install wine winetricks lutris cdemu-client cdemu-daemon gstreamer-plugins-good gstreamer-plugins-good-32bit gstreamer-plugins-base gstreamer-plugins-base-32bit gstreamer-plugins-libav gstreamer-plugins-libav-32bit gstreamer-plugins-bad gstreamer-plugins-bad-32bit gstreamer-plugins-ugly gstreamer-plugins-ugly-32bit libgudev-1_0-0 libgudev-1_0-0-32bit libSDL2-2_0-0 libjpeg-turbo
+</code></pre></div>
+Now load the VHBA module into your kernel.  </p>
+<div class="highlight"><pre><span></span><code>sudo modprobe -a sg sr_mod vhba
+</code></pre></div>
+</div>
+<input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><label for="__tabbed_1_6">Gentoo</label><div class="tabbed-content">
+<p>Make sure your kernel is compiled with the following options enabled:</p>
+<ul>
+<li><code>CONFIG_BLK_DEV_SR</code></li>
+<li><code>CONFIG_ISO9660_FS</code></li>
+<li><code>CONFIG_UDF_FS</code></li>
+<li><code>CONFIG_IA32_EMULATION</code> (for 32 bit support)</li>
+</ul>
+<p>and that you have a multilib setup.</p>
+<p>It is recommended to have the following global use flags in your <code>make.conf</code>:</p>
+<ul>
+<li><code>X</code></li>
+<li><code>pulseaudio</code></li>
+<li><code>jpeg</code></li>
+<li><code>png</code></li>
+</ul>
+<p>Refer to the gentoo wiki for more information on different verions of wine available on gentoo <a href="https://wiki.gentoo.org/wiki/Wine">here</a>. <code>wine-vanilla</code> should be able to run almost everything fine . Be sure that the flag <code>abi_x86_32</code> is not turned off FOR wine-vanilla (it's on by default), more info visit the wiki <a href="https://wiki.gentoo.org/wiki/Wine#32-bit_vs_64-bit">here</a>.</p>
+<p>Install the deps.
+<div class="highlight"><pre><span></span><code>sudo emerge -v app-emulation/wine-vanilla virtual/wine games-util/lutris app-cdr/cdemu app-emulation/winetricks
+</code></pre></div></p>
+<p>Load the vhba module for cdemu
+<div class="highlight"><pre><span></span><code>sudo modprobe vhba
+</code></pre></div></p>
+<p>To autoload the module on startup, edit your <code>/etc/conf.d/modules</code> file and add this line:</p>
+<div class="highlight"><pre><span></span><code><span class="n">modules</span><span class="o">=</span><span class="s">&quot;vhba&quot;</span><span class="w"></span>
+</code></pre></div>
+<p>In order for the CDEmu daemon to be started automatically by the UI, you will need to have dbus enabled. You can enable it by running:</p>
+<div class="highlight"><pre><span></span><code>sudo rc-update add dbus default
+<span class="c1">## or if systemd the default init</span>
+sudo systemctl <span class="nb">enable</span> dbus
+</code></pre></div>
+</div>
+</div>
+<h2 id="configure-wine-and-install-runtimes">Configure Wine and install runtimes<a class="headerlink" href="#configure-wine-and-install-runtimes" title="Permanent link">&para;</a></h2>
+<h3 id="creating-the-wineprefix">Creating the Wineprefix<a class="headerlink" href="#creating-the-wineprefix" title="Permanent link">&para;</a></h3>
+<p>First we need to create a 32 bit Wine prefix, this has the best compatibility and 64 bit is unnecessary for VNs.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn <span class="nv">WINEARCH</span><span class="o">=</span>win32 wineboot
+</code></pre></div>
+<h3 id="using-winetricks">Using winetricks<a class="headerlink" href="#using-winetricks" title="Permanent link">&para;</a></h3>
+<p>Now we need to install the common redistributables such as DirectX, Visual C++ Runtimes and .NET Framework 3.5 and other things that make video cutscenes work. </p>
+<div class="admonition tip">
+<p class="admonition-title">Optional: Font smoothing</p>
+<p>You can do <code>winetricks fontsmooth=rgb</code> because without it, the font is simply awful.  </p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Optional: GUI Improvments</p>
+<p>You can open the Registry Editor using <code>wine regedit</code> and import <a href="https://cdn.discordapp.com/attachments/813105334763126814/813105422285799464/wine_breeze_colors.reg">this .reg file</a>, the GUI should look nice and clean then.  </p>
+</div>
+<p>First you need to get the latest patches for Winetricks or else this will not work. </p>
+<p><div class="highlight"><pre><span></span><code>sudo winetricks --self-update
+</code></pre></div>
+Now you can use Winetricks. 
+<div class="highlight"><pre><span></span><code><span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn winetricks ffdshow quartz wmp9 d3dx9 dotnet35 vcrun2003 vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">ffdshow</p>
+<p>When installing ffdshow, make sure you check (tick) ☑ every single codec/format or else it will not work!  </p>
+</div>
+<p>Installing DXVK slightly improves performance as it is a Vulkan implementation of D3DX9.<br />
+<div class="highlight"><pre><span></span><code><span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn winetricks dxvk
+</code></pre></div></p>
+<div class="admonition warning">
+<p class="admonition-title">Vulkan Unsupported Systems</p>
+<p>If your system does not support Vulkan, do not install DXVK. If you want to remove DXVK, follow the instructions <a href="https://github.com/doitsujin/dxvk">here</a>  </p>
+</div>
+<p>For some VNs, such as TYPE-MOON's, LAVFilters may be needed to playback video.<br />
+<div class="highlight"><pre><span></span><code><span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn winetricks lavfilters
+</code></pre></div></p>
+<div class="admonition failure">
+<p class="admonition-title">ffdshow and LAVFilters</p>
+<p>Some games may break if you have both ffdshow and LAVFilters installed! Make sure you experiment!  </p>
+</div>
+<p>Then, run this command to disable DLL overrides, and use the native DLLs instead:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn winetricks <span class="nv">alldlls</span><span class="o">=</span>default
+</code></pre></div>
+<div class="admonition question">
+<p class="admonition-title">Having issues?</p>
+<p>You can set it back using <code>winetricks alldlls=builtin</code>  </p>
+</div>
+<h3 id="japanese-fonts-in-wine">Japanese fonts in Wine<a class="headerlink" href="#japanese-fonts-in-wine" title="Permanent link">&para;</a></h3>
+<p>You need to install Japanese fonts to Wine now. Please download the pack below.<br />
+<a href="https://drive.google.com/file/d/1OiBgAmt3vPRu08gPpxFfzrtDgarBGszK/view?usp=drivesdk">[Google Drive]</a><br />
+Unzip the file and move the font files to your <code>Fonts</code> folder in <code>~/.winevn/drive_c/windows/Fonts</code>    </p>
+<div class="admonition question">
+<p class="admonition-title">Why not install <code>cjkfonts</code> in winetricks?</p>
+<p>Because it doesn't work properly for VNs.  </p>
+</div>
+<h2 id="lutris-initial-setup">Lutris initial setup<a class="headerlink" href="#lutris-initial-setup" title="Permanent link">&para;</a></h2>
+<h3 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
+<p>Once thats done, we can setup Lutris.</p>
+<p>Open Lutris, and click the plus icon in the top left corner, and click Install runners.</p>
+<p><img alt="Image" src="../img/vnlinux1.jpg" /></p>
+<p>Scroll down to the bottom and find "Wine" and click the cog icon next to it.  </p>
+<p><img alt="Image" src="../img/vnlinux2.jpg" />  </p>
+<p>Now go to System options and set the environment variables as shown below and click Save.  </p>
+<ul>
+<li>Key: <code>LC_ALL</code> Value: <code>ja_JP.UTF-8</code>  </li>
+<li>Key: <code>TZ</code> Value: <code>Asia/Tokyo</code>   </li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Wine prefix in lutris</p>
+<p>Forgot to include this so make sure you set the wine prefix in Lutris too.  </p>
+</div>
+<p><img alt="Image" src="../img/vnlinux3.jpg" />  </p>
+<h2 id="installing-the-visual-novel">Installing the visual novel<a class="headerlink" href="#installing-the-visual-novel" title="Permanent link">&para;</a></h2>
+<p>I will be using 古色迷宮輪舞曲～HISTOIRE DE DESTIN～ for this demonstration. Visual Novels usually come in .ISO files and if not, an .MDS/.MDF file which can be mounted with <code>cdemu</code>.  </p>
+<h3 id="mounting-disc-images">Mounting disc images<a class="headerlink" href="#mounting-disc-images" title="Permanent link">&para;</a></h3>
+<p>Navigate to the path of the disc image:<br />
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /path/to/visualnovelfolder
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">MDS</p>
+<p>Load the .MDS file with CDEmu first. The Linux <code>mount</code> command will not mount it.
+<div class="highlight"><pre><span></span><code>cdemu load <span class="m">0</span> /path/to/mds_image.MDS
+</code></pre></div></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">UDF Volumes</p>
+<p>Load the UDF volume with CDEmu. The Linux <code>mount</code> command with the <code>-t udf</code> argument is not advised.<br />
+<div class="highlight"><pre><span></span><code>cdemu load <span class="m">0</span> /path/to/udf_volume
+</code></pre></div></p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">CDEmu Mount Point?</p>
+<p>It should usually be in <code>/run/media/user/image_name</code>  </p>
+</div>
+<p>If using a regular ISO9660 ISO file create a mount point for it.
+<div class="highlight"><pre><span></span><code>sudo mkdir -p /media/cdrom0
+</code></pre></div>
+Now we can mount our ISO to our mount point.<br />
+<div class="highlight"><pre><span></span><code>sudo mount -o loop file.ISO /media/cdrom0
+</code></pre></div>
+If all went well, you will be able to see the contents of the image by doing <code>ls /media/cdrom0</code> or whatever your mount point is:  </p>
+<p><img alt="Image" src="../img/vnlinux4.jpg" />  </p>
+<h3 id="running-the-installer">Running the installer<a class="headerlink" href="#running-the-installer" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Localegen</p>
+<p>Generate the ja_JP.UTF-8 locale first.</p>
+</div>
+<p>Next, we will run the setup file using <code>wine</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">&quot;ja_JP.UTF-8&quot;</span> <span class="nv">TZ</span><span class="o">=</span><span class="s2">&quot;Asia/Tokyo&quot;</span> <span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn wine &lt;setup_executable&gt;.exe
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">.msi installer</p>
+<p>If the installer executable is an .msi, run with <code>msiexec</code> instead of <code>wine</code>.  </p>
+</div>
+<p>Proceed with the installation. The game may be installed in <code>~/.winevn/drive_c/Program Files</code> or wherever you chose to install it.  </p>
+<h2 id="adding-to-lutris">Adding to Lutris<a class="headerlink" href="#adding-to-lutris" title="Permanent link">&para;</a></h2>
+<p>Now we can add the game to Lutris so we can launch it quickly.  </p>
+<p>Back in Lutris, click the plus icon in the corner, add the name of the VN, choose Wine as the runner and under "Game Options" navigate to the game's executable. You should also change the prefix architecture to 32-bit.</p>
+<p><img alt="Image" src="../img/vnlinux5-sup.jpg" />  </p>
+<div class="admonition tip">
+<p class="admonition-title">AlphaROMdiE</p>
+<p>For AlphaROMdiE, you need to add AlphaROMdiE to Lutris as the executable, and the filename .exe of the Visual Novel as an argument. If you are using Wine in a command line it should look something like this: 
+<div class="highlight"><pre><span></span><code><span class="nv">LC_ALL</span><span class="o">=</span><span class="s2">&quot;ja_JP.UTF-8&quot;</span> <span class="nv">TZ</span><span class="o">=</span><span class="s2">&quot;Asia/Tokyo&quot;</span> <span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn  wine AlphaROMdiE.exe &lt;VN_executable.exe&gt;
+</code></pre></div>
+For the 1st option, you must create an empty file <code>disable_conv</code> in the same location as AlphaROMdiE.exe, for the 3rd option, you must create an empty file <code>other_engine</code> in the same location as AlphaROMdiE.exe. You can do this easily by doing: 
+<div class="highlight"><pre><span></span><code>touch disable_conv other_engine
+</code></pre></div></p>
+</div>
+<p><img alt="Image" src="../img/vnlinux5.jpg" />  </p>
+<div class="admonition warning">
+<p class="admonition-title">Vulkan Unsupported Systems</p>
+<p>If your system does not support Vulkan, you must disable DXVK in "Runner options", this will fallback to regular D3DX9. DXVK is a Vulkan implementation of Direct3D so we will be keeping it on even though Vulkan may not make much of a difference.  </p>
+</div>
+<p>Now you can just launch it in Lutris!  </p>
+<p><img alt="Image" src="../img/vnlinux6.jpg" />  </p>
+<div class="admonition failure">
+<p class="admonition-title">Error: オリジナルディスクを入れてください</p>
+<p>Load the .ISO image with <code>cdemu</code>. Even though Linux can mount ISO9660 images without CDEmu, <em>Wine</em> programs cannot seem to find the mounted image.<br />
+<div class="highlight"><pre><span></span><code>cdemu load <span class="m">0</span> /path/to/image.ISO
+</code></pre></div></p>
+</div>
+<p>and viola!  </p>
+<p><img alt="Image" src="../img/vnlinux7.jpg" /></p>
+<p>Now go back to <a href="https://learnjapanese.moe/vn/#playing-visual-novels-to-learn-japanese">Visual Novel Guide</a> to learn how to use Textractor, it works perfectly under Wine. Also consider adding Textractor to Lutris for quick access.</p>
+<h2 id="linux-troubleshooting">Linux: Troubleshooting<a class="headerlink" href="#linux-troubleshooting" title="Permanent link">&para;</a></h2>
+<h3 id="shift-jis">Shift-JIS<a class="headerlink" href="#shift-jis" title="Permanent link">&para;</a></h3>
+<p>Credit: Broken Dragon Translation  </p>
+<p>Do this when you've done everything correctly but your VN text still looks like this: ????? ?????????? ???????????? 
+You don't usually need to do this. 
+This means your VN needs to use ja_JP.sjis instead of ja_JP.UTF-8.  </p>
+<p>You need to download ja_JP.sjis from <a href="https://cdn.discordapp.com/attachments/813105334763126814/825472692558889022/ja_JP.sjis.zip">here</a> first.  </p>
+<p>Extract it to a memorable location on your computer and <code>cd</code> into that directory.  </p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /path/to/ja_JP.sjis
+</code></pre></div>
+<p>Now compile the locale using <code>localedef</code>:
+<div class="highlight"><pre><span></span><code>localedef -i ja_JP -f SHIFT_JIS ./ja_JP.sjis --no-warnings<span class="o">=</span>ascii
+</code></pre></div></p>
+<p>Using <code>sed</code>, edit your locale.gen</p>
+<p><div class="highlight"><pre><span></span><code>sed -i <span class="s1">&#39;/ja_JP.UTF-8 UTF-8/a ja_JP.SJIS SHIFT_JIS  &#39;</span> /etc/locale.gen
+</code></pre></div>
+Now generate locales:</p>
+<div class="highlight"><pre><span></span><code>locale-gen 
+</code></pre></div>
+<p>You can then change the <code>LC_ALL</code> environment variable in Lutris to <code>ja_JP.sjis</code>.  </p>
+<h3 id="mpeg-1-movie-does-not-play">MPEG-1 movie does not play<a class="headerlink" href="#mpeg-1-movie-does-not-play" title="Permanent link">&para;</a></h3>
+<p>See https://bugs.winehq.org/show_bug.cgi?id=52448 for the fix.  </p>
+<h3 id="fuguriya-vns">Fuguriya VNs<a class="headerlink" href="#fuguriya-vns" title="Permanent link">&para;</a></h3>
+<p>VNs made by Fuguriya such as <em>Sono Hanabira ni Kuchizuke o</em> and <em>Hanahira</em>  will not launch with Wine by default. Follow the steps below to fix this.  </p>
+<p>Download fjfix <a href="https://cdn.discordapp.com/attachments/813105334763126814/832650409167945798/fjfix.tar.gz">[here]</a>. <br />
+Extract the archive. <br />
+Now in the terminal, run:<br />
+<div class="highlight"><pre><span></span><code><span class="nv">LC_ALL</span><span class="o">=</span>ja_JP.UTF-8 <span class="nv">WINEPREFIX</span><span class="o">=</span>~/.winevn wine fjfix.exe -f /path/to/MGD
+</code></pre></div></p>
+<p>Now it should just work.  </p>
+<h3>Found this useful? Consider supporting me on Patreon!</h3>
+
+<p><a class="md-button" href="https://www.patreon.com/shoui"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"/></svg></span> Support me on Patreon</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "search.suggest", "search.highlighting", "search.share"], "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>
