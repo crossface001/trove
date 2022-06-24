@@ -1,6 +1,6 @@
 site_name: Trove
 site_description: Knowledge is Power
-site_url: crossface.moe
+site_url: https://crossface.moe/trove
 site_author: crossface 
 nav:
   - Home: 'index.md'
